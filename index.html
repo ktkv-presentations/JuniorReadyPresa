@@ -23,189 +23,147 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
+                    <h1>
+                        Разработка инструментов, которые помогут выпускнику
+                        колледжа успешно пройти собеседование при
+                        трудоустройстве
+                    </h1>
+                    <hr />
+                    <h3>Кутиков Павел Алексеевич</h3>
+                    <h4>
+                        БПОУ "Колледж инновационных технологий, экономики и
+                        коммерции"
+                    </h4>
                 </section>
                 <section>
                     <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
+                        <h1>Проблема</h1>
+                        <p>За 4 года студент:</p>
+                        <ul>
+                            <li>Проходит десятки дисциплин</li>
+                            <li>Разрабатывает множество продуктов</li>
+                            <li>
+                                Изучает технологии из разных сфер разработки
+                            </li>
+                            <li>Делает множественные выступления</li>
+                        </ul>
+                        <hr />
+                        <h4>
+                            Однако структура на протяжении времени ослабевает
+                        </h4>
                     </section>
                     <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
+                        <h1>Почему так происходит?</h1>
+                        <ul>
+                            <li>
+                                Не помнит названия того, что делал полгода назад
+                            </li>
+                            <li>Не может рассказать о проекте за 2 минуты</li>
+                            <li>Молчит там, где нужно думать вслух</li>
+                            <li>Не знает, чего ожидать от рекрутера</li>
+                        </ul>
                     </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
+                    <section>
+                        <h1>Решение</h1>
                         <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
+                            Создать инструмент, который не учит заново - а
+                            помогает увидеть то, что уже знаешь
                         </p>
                     </section>
                 </section>
                 <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
+                    <section>
+                        <h1>JuniorReady</h1>
+                        <p>
+                            веб-приложение для подготовки выпускника
+                            IT-специальности к первому собеседованию
+                        </p>
+                        <ul>
+                            <li>Roadmap навыков</li>
+                            <li>Чеклист soft skills</li>
+                            <li>Тренажёр интервью</li>
+                            <li>Карта курсов</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Задача продукта</h1>
+                        <div class="border-b">
+                            Разработать фреймворк, который будет удобно
+                            наполнять в зависимости от того опыта, который
+                            необходим выпускникам
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Roadmap навыков</h1>
+
+                        <p>
+                            Студент выбирает трек: Frontend или Backend и
+                            отмечает технологии, которые уже знает
+                        </p>
+                        <ul
+                            style="
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                            ">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>React</li>
+                            <li>Git</li>
+                            <li>Django</li>
+                            <li>Laravel</li>
+                            <li>Express</li>
+                            <li>...</li>
+                        </ul>
+                        <p>Впервые видит весь объём того, что освоил</p>
+                    </section>
+                    <section>
+                        <h1>Чеклист soft skills</h1>
+                        <p>
+                            Студент выбирает трек: Frontend или Backend и
+                            отмечает технологии, которые уже знает
+                        </p>
+                        <ul>
+                            <li>Самопрезентация</li>
+                            <li>Коммуникация</li>
+                            <li>Поведение на интервью</li>
+                            <li>Психологическая готовность</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1>Тренажёр интервью</h1>
+                        <p>HR-вопросы + технические вопросы</p>
+                        <p>
+                            После выбора — объяснение логики интервьюера:почему
+                            этот ответ работает или не работает
+                        </p>
+                    </section>
+                    <section>
+                        <h1>Карта курсов</h1>
+                        <p>
+                            Roadmap, который включает в себя все технологии,
+                            которые прошел выпускник за 4 года
+                        </p>
+                        <p>
+                            Помогает систематизировать техонологии и вспомнить
+                            что было изучено в образовательном процессе
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <h1>
+                        Разработка инструментов, которые помогут выпускнику
+                        колледжа успешно пройти собеседование при
+                        трудоустройстве
+                    </h1>
+                    <hr />
+                    <h3>Кутиков Павел Алексеевич</h3>
                     <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
+                        БПОУ "Колледж инновационных технологий, экономики и
+                        коммерции"
                     </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
-                    <img
-                        class="r-stretch"
-                        src="https://goqr.me/"
-                        data-type="qrcode" />
-                </section>
-                <section>
-                    <h1>New changes on the way!</h1>
                 </section>
             </div>
         </div>
@@ -396,4 +354,3 @@ var foo = {
         </script>
     </body>
 </html>
-
